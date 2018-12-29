@@ -37,6 +37,8 @@
     * 常见界面元素的使用
 
     * 使用 QML 与 QSS
+    
+    * 使用QtWebkit与QtWebEngine开发内嵌浏览器的软件
 
     * 应用程序图标规范
 
