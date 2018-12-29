@@ -58,7 +58,7 @@
 
     * 图形图像
 
-    * 开发共享库
+    * 开发共享库与系统服务
 
 6. 优化Qt应用软件
 
@@ -112,7 +112,7 @@
 
     * 从Windows迁移到Linux
     
-        * DeepinWine、Mono、驱动、Web前端、Web后端
+        * 现状、Windows与Linux的差异、DeepinWine、Mono、驱动、Web前端、Web后端
     
     * 从Android迁移到Linux
     
