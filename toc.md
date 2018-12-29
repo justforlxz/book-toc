@@ -83,9 +83,7 @@
     * 使用google-perftools进行性能分析（5）
     * 使用gprof进行性能剖析（5）
     * 使用valgrind与sanitizer进行内存分析（5-10）
-9. 维护与发布（40-50页）
-
-    * 创建代码仓库（使用github、gitlab）与进行版本管理（issues、PR、webhooks、分支、tag）（10）
+9. 维护与发布（30-40页）
 
     * 发布（依赖性分析、debian打包与flatpak打包）（15）
 
