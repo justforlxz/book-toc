@@ -12,7 +12,9 @@ SOURCES += \
     titlebarcontent.cpp \
     scanview.cpp \
     mainwindow.cpp \
-    controller.cpp
+    controller.cpp \
+    cacheresultview.cpp \
+    bigfileresultview.cpp
 
 RESOURCES +=         resources.qrc
 
@@ -21,4 +23,6 @@ HEADERS += \
     scanview.h \
     mainwindow.h \
     controller.h \
-    scanresult.h
+    scanresult.h \
+    cacheresultview.h \
+    bigfileresultview.h

@@ -12,6 +12,8 @@ class Controller : public QObject
 public:
     explicit Controller(QObject *parent = nullptr);
 
+    ScanResult *result() const;
+
 signals:
     void fileScanned(const QString &file);
     void scanProgressChanged(const qreal &progress);

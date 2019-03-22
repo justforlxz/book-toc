@@ -13,10 +13,15 @@ class TitlebarContent : public QFrame
 public:
     explicit TitlebarContent(QWidget *parent = nullptr);
 
-    DSegmentedControl *control() const;
+signals:
+    void bigFileSelected();
+    void cacheSelected();
 
 private:
     DSegmentedControl *m_control;
+
+    void initUI();
+    void initConnections();
 };
 
 #endif // TITLEBARCONTENT_H

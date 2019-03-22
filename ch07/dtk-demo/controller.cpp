@@ -96,3 +96,8 @@ void Controller::startScan()
 
     thread->start();
 }
+
+ScanResult *Controller::result() const
+{
+    return m_result;
+}
