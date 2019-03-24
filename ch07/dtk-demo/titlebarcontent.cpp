@@ -6,7 +6,9 @@ TitlebarContent::TitlebarContent(QWidget *parent)
     : QFrame(parent),
       m_control(new DSegmentedControl)
 {
+    // 构建用户界面
     initUI();
+    // 连接信号槽
     initConnections();
 }
 

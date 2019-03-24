@@ -14,7 +14,9 @@ public:
     explicit TitlebarContent(QWidget *parent = nullptr);
 
 signals:
+    // 通知界面更新，显示大文件扫描结果
     void bigFileSelected();
+    // 通知界面更新，显示缓存扫描结果
     void cacheSelected();
 
 private:
