@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>images/deepin-logo.svg</file>
+        <file>images/logo.svg</file>
+        <file>images/cat_normal.png</file>
+        <file>images/cat_hover.png</file>
+        <file>images/cat_pressed.png</file>
+        <file>images/effects-bg.jpg</file>
+    </qresource>
+    <qresource prefix="/data/">
+        <file>settings.json</file>
     </qresource>
 </RCC>

@@ -8,6 +8,21 @@ CONFIG += c++11 link_pkgconfig
 PKGCONFIG += dtkwidget
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+    mainwindow.cpp \
+    controlspage.cpp \
+    effectspage.cpp \
+    settingsdialog.cpp
 
 RESOURCES +=         resources.qrc
+
+HEADERS += \
+    mainwindow.h \
+    controlspage.h \
+    effectspage.h \
+    settingsdialog.h
+
+DESTFILES += settings.json
+
+DISTFILES += \
+    settings.json

@@ -1,0 +1,111 @@
+{
+    "groups": [
+        {
+            "key": "basic",
+            "name": "Basic",
+            "groups": [
+                {
+                    "key": "select_multiple",
+                    "name": "Checkbox",
+                    "options": [
+                        {
+                            "key": "checkbox_1",
+                            "text": "Check list 1",
+                            "type": "checkbox",
+                            "default": 1
+                        },
+                        {
+                            "key": "checkbox_2",
+                            "text": "Check list 2",
+                            "type": "checkbox"
+                        }
+                    ]
+                },
+                {
+                    "key": "select_single",
+                    "name": "Radiogroup",
+                    "options": [
+                        {
+                            "key": "radiogroup",
+                            "name": "",
+                            "type": "radiogroup",
+                            "items": [
+                                "Option 1",
+                                "Option 2"
+                            ],
+                            "default": 1
+                        }
+                    ]
+                },
+                {
+                    "key": "slider",
+                    "name": "Sliders",
+                    "options": [
+                        {
+                            "key": "slider",
+                            "type": "slider",
+                            "name": "Opacity",
+                            "min": 0,
+                            "max": 100,
+                            "default": 50
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "advanced",
+            "name": "Advanced",
+            "groups": [
+                {
+                    "key": "combo",
+                    "name": "Combobox",
+                    "options": [
+                        {
+                            "key": "combobox",
+                            "name": "Combobox",
+                            "type": "combobox",
+                            "items": [
+                                "hello", "world"
+                            ],
+                            "default": "hello"
+                        }
+                    ]
+                },
+                {
+                    "key": "spin",
+                    "name": "SpinButton",
+                    "options": [
+                        {
+                            "key": "spin",
+                            "name": "Change the value",
+                            "type": "spinbutton",
+                            "default": 10
+                        }
+                    ]
+                },
+                {
+                    "key": "shortcuts",
+                    "name": "Shortcuts",
+                    "options": [
+                        {
+                            "key": "open_file",
+                            "name": "Open file",
+                            "type": "shortcut",
+                            "default": "Ctrl+o"
+                        },
+                        {
+                            "key": "open_folder",
+                            "name": "Open folder",
+                            "type": "shortcut",
+                            "default": "Ctrl+f"
+                        }
+                    ]
+                }
+
+            ]
+        }
+
+    ]
+}

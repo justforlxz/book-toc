@@ -1,8 +1,13 @@
 #include <DApplication>
-#include <DMainWindow>
 #include <DWidgetUtil>
-#include <QPixmap>
+#include <daboutdialog.h>
+#include <DLog>
 
+#include <QDebug>
+
+#include "mainwindow.h"
+
+DCORE_USE_NAMESPACE
 DWIDGET_USE_NAMESPACE
 
 int main(int argc, char *argv[])
@@ -16,9 +21,6 @@ int main(int argc, char *argv[])
     a.setAttribute(Qt::AA_UseHighDpiPixmaps);
     a.setTheme("light");
 
-//    QIcon(":/images/deepin-logo.svg").pixmap(QSize(48, 48)).save("/tmp/test.png");
-    QPixmap(":/images/deepin-logo.svg").save("/tmp/test.png");
-
     // 设置组织名称
     a.setOrganizationName("deepin");
     // 设置应用名称
@@ -26,19 +28,25 @@ int main(int argc, char *argv[])
     // 设置应用版本号
     a.setApplicationVersion("0.1");
     // 设置应用图标
-    a.setProductIcon(QIcon(":/images/deepin-logo.svg"));
+    a.setProductIcon(QIcon(":/images/logo.svg"));
     // 设置应用产品名称
     a.setProductName("DTK Widgets Gallery");
     // 设置应用描述信息
     a.setApplicationDescription("DTK widgets gallery is an demo application to "
                                 "demonstrate how DTK works.");
-    // 设置程序官网链接
-    a.setApplicationHomePage("https://github.com/linuxdeepin/dtkwidget");
     // 不显示鸣谢链接
     a.setApplicationAcknowledgementVisible(false);
+    // 设置程序授权
+    a.setApplicationLicense("GPLv3");
 
-    DMainWindow w;
-    w.setMinimumSize(500, 500);
+    // 设置终端日志和日志文件处理
+    DLogManager::registerConsoleAppender();
+    DLogManager::registerFileAppender();
+
+    qDebug() << "hello dtk logging";
+
+    MainWindow w;
+    w.setMinimumSize(600, 500);
     w.show();
 
     Dtk::Widget::moveToCenter(&w);
