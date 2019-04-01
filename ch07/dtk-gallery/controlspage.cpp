@@ -130,7 +130,7 @@ void ControlsPage::initConnections()
     {
         QProcess::startDetached("xdg-open https://www.deepin.org");
 
-        m_message->setText("Link is open!");
+        m_message->setText("Link opened!");
     });
 
     // DImageButton点击的时候，在右侧的信息框中显示提示信息
@@ -163,7 +163,7 @@ void ControlsPage::initConnections()
 
     // DPasswordEdit编辑完成时，在右侧信息框中显示输入内容
     connect(m_passwordEdit, &DPasswordEdit::editingFinished, this, [this] {
-        m_message->setText("Guess what, I know your password: \n" + m_searchEdit->text());
+        m_message->setText("Guess what, I know your password: \n" + m_passwordEdit->text());
     });
 
     // DIpv4LineEdit编辑完成时，在右侧信息框中显示输入内容
